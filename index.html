@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./realcal.css">
+</head>
+<body>
+    <header>calculator</header>
+    <form action="">
+    <nav>
+       <input class="nav1" id="nav1" name="display"><br><br>
+       <div class="nav2" id="nav2">
+        <div>
+            <input type="button" style="color: aqua;" onclick="display.value=display.value.slice(0,display.value.length-1)" value="delete">
+        </div>
+        <div id="child1">
+            <input type="button" onclick="display.value+='1'" value="1">
+            <input type="button" onclick="display.value+='2'" value="2">
+            <input type="button" onclick="display.value+='3'" value="3">
+            <input type="button" onclick="display.value+='+'" value="+">
+        </div>
+        <div id="child2">
+            <input type="button" onclick="display.value+='4'" value="4">
+            <input type="button" onclick="display.value+='5'" value="5"> 
+            <input type="button" onclick="display.value+='6'" value="6">
+            <input type="button" onclick="display.value+='-'" value="-">
+            
+        </div>
+        <div id="child3">
+            <input type="button" onclick="display.value+='7'" value="7">
+            <input type="button" onclick="display.value+='8'" value="8">
+            <input type="button" onclick="display.value+='9'" value="9">
+            <input type="button" onclick="display.value+='*'" value="*">
+        </div>
+        <div id="child4">
+            <input type="button" onclick="display.value=''" value="AC" style=" width: 18%;color: aqua;">
+            <input type="button" onclick="display.value+='0'" value="0"  style=" width: 18%;">
+            <input type="button" onclick="display.value+='.'" value="."  style=" width: 18%;">
+            <input type="button" onclick="display.value+='/'" value="/"  style=" width: 18%;">
+            <input type="button" onclick="display.value=eval(display.value)" value="="  style=" width: 18%;">
+
+        </div>
+       </div>
+    </nav>
+</form>
+    <script src="./realcal.js">
+       
+        
+        
+    </script>
+</body>
+</html>
